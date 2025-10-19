@@ -19,7 +19,7 @@ function App() {
   const [refr,setRefr ] = useState();
   const resdata = JSON.parse(localStorage.getItem('data')) || null
   useEffect(() => {
-     axios.get('https://final-checking.vercel.app//api/dashboard', { withCredentials: true }).then(res => {
+     axios.get('https://final-checking.vercel.app/api/dashboard', { withCredentials: true }).then(res => {
       console.log('Protected data:', res.data)
       setData(res.data);
     })
