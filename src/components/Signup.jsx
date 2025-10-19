@@ -20,7 +20,7 @@ const Signup = ({ onSwitch }) => {
       return  alert('Please fill all fields');
     }
     try {
-       const newres = await axios.post('http://localhost:5000/api/create-user', {
+       const newres = await axios.post('https://final-checking.vercel.app/api/create-user', {
         username,
         email,
         enic,

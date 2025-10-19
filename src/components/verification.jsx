@@ -19,7 +19,7 @@ const verification = () => {
       return alert('Please fill all fields');
      }
     try {
-      const res = await axios.post('http://localhost:5000/api/verify', {
+      const res = await axios.post('https://final-checking.vercel.app//api/verify', {
         verify,
       }, { withCredentials: true });
       console.log('Login successful:', res.data);

@@ -20,7 +20,7 @@ const Login = ({ data , setRefr}) => {
       return alert('Please fill all fields');
      }
     try {
-      const res = await axios.post('http://localhost:5000/api/login', {
+      const res = await axios.post('https://final-checking.vercel.app/api/login', {
         email,
         password
       }, { withCredentials: true });
@@ -55,7 +55,7 @@ const Login = ({ data , setRefr}) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">
+        <button type="submit" className="w-full bg-green-500 hover:bg-green-700 text-white py-2 rounded">
           Login
         </button>
       </form>
