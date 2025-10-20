@@ -7,7 +7,7 @@ const Login = ({ data , setRefr}) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   useEffect(() => {
-    axios.get('http://localhost:5000/api/verified', { withCredentials: true }).then(res => {
+    axios.get('https://final-checking.vercel.app/api/verified', { withCredentials: true }).then(res => {
       setVerified(res.data.message)
       console.log(res.data.message);
     })

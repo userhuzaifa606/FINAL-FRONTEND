@@ -9,7 +9,6 @@ export default function Dashboard({data}) {
     { id: 1, name: "CBC Report", date: "2025-10-10", summary: "WBC slightly high; Hb normal." },
     { id: 2, name: "Sugar Test", date: "2025-10-14", summary: "Fasting sugar borderline high." }
   ]);
-
   
   return (
     <>
